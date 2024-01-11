@@ -52,6 +52,7 @@ sequential_chain = SequentialChain(
 
 if st.button("Generate Tweets") and prompt and voice_options:
     response = sequential_chain.invoke({"description": prompt, "option": voice_options})
+    
     # response = sequential_chain({"description": prompt, "option": voice_options})
     # print(response)
     # print(f"Tweet 1: {response['tweet_one']} -- Tweet2:{response['tweet_two']}")
